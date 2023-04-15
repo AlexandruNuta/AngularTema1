@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchTerm" (keyup.enter)="onSearch()" placeholder="Select your city">
+  </div>
+  <div class="content">
+    <h1>OUR SERVICES</h1>
+    <div class="service-cards">
+  <div class="card">
+    <button class="card-header-button">TRAVEL</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">TRAVEL ARRANGAMENTS</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">OUR PROFESSIONAL GUIDE</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">ACTIVITIES</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+<!-- </div>
+    <div *ngFor="let city of search(searchTerm)">
+      {{city.name}}
+    </div>
+  </div> -->
+  <router-outlet></router-outlet>
+  <div class="MostPopularButton">
+    <button mat-raised-button color="primary" routerLink="/cities">Most Popular</button>
+  </div>
+</div>
+
+
+
+<!-- <div class="service-cards">
+  <div class="card">
+    <button class="card-header-button">TRAVEL</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">TRAVEL ARRANGAMENTS</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">OUR PROFESSIONAL GUIDE</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button class="card-header-button">ACTIVITIES</button>
+    <div class="card-body">
+      <p>Service Description</p>
+    </div>
+    <div class="card-footer">
+      <span>Article Title</span>
+    </div>
+  </div>
+</div>
+<app-cities></app-cities> -->

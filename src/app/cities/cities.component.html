@@ -1,0 +1,12 @@
+<h2 class="title">MOST POPULAR</h2>
+
+<div class="card-deck">
+  <div class="card" *ngFor="let city of cities">
+    <img class="card-img-top" src="{{city.image}}" alt="{{city.name}}">
+    <div class="card-body">
+      <h5 class="card-title">{{city.name}}</h5>
+      <p class="card-text">{{city.description}}</p>
+      <button class="btn btn-primary btn-vote-now" (click)="visitCity(city.name)">Visit Now</button>
+    </div>
+  </div>
+</div>

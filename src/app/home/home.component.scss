@@ -1,0 +1,29 @@
+.button-container button,
+.button-container a {
+  margin-right: 8px;
+  background-color: white;
+  border:none;
+  
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .bg-image {
+    background-image: url('/assets/images1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    color: white;
+    border: none;
+  }
+  .title {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+  }
